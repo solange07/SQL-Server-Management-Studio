@@ -1,0 +1,2 @@
+/*4) Cree un reporte que muestre el número de empleados y clientes de cada ciudad que tiene empleados
+en ella*/Select COUNT E.EmployeeID as numEmpleados,COUNT  C.CustomerID  as numClientes,E.city as Ciudad,C.City as CiudadFROM Employees E inner join Customers C on E.City=C.CityGROUP BY E.City,C.City--E.EmployeeID,C.CustomerID*/
